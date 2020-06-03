@@ -34,35 +34,50 @@ Since roots of $f$ are outside of real fields(in complex fields), we cannot fact
 \begin{frame}{Irreducible quadratics in $\mathbb{Z}_p[x]$}
 We take $f(x) = x^2+x+1$ and prime $p=2$.
 
-Since $f([0])=[1]$ and $f([1])= [1]$.
+Since $f(0)=1$ and $f(1)= 1$.
+
+\vspace{5pt}
 $f$ is not divisible by a linear polynomial in $\mathbb{Z}_2$.
 
-So the polynomial is irreducible.
+$\therefore$ the polynomial is irreducible.
 \end{frame}
 
 
+%\begin{frame}{Irreducible cubics in $\mathbb{Z}_p[x]$}
+%Take $f(x)= x^3+2$ and prime $p=7$.
+%We can see that if $f$ is not irreducible, then at least one (\textit{up to a scalar}) linear polynomial divides $f$. So $f$ has a root in field $\mathbb{Z}_7$.
+
+%But in fact $f(0)=2$,$f(1)=f(2)=f(4)=3$, and $ff(3)=f(5)=f(6)=1$, $f(x)=0$ is %insolvable in field $\mathbb{Z}_7$.
+
+%We kick out all possible ways, so $f$ must be irreducible.
+
+%\end{frame}
+
+
+
+%$\therefore$ the polynomial is irreducible.
+
+
 \begin{frame}{Irreducible cubics in $\mathbb{Z}_p[x]$}
+%\begin{variableblock}{}{bg=gray,fg=white}{bg=white,fg=white}
+%Take $f(x)= x^3+2$ and prime $p=7$.
+%\end{variableblock}
+\begin{block}{Irreducible cubics in $\mathbb{Z}_7$}
 Take $f(x)= x^3+2$ and prime $p=7$.
-We can see that if $f$ is not irreducible, then at least one (\textit{up to a scalar}) linear polynomial divides $f$. So $f$ has a root in field $\mathbb{Z}_7$.
+\end{block}
+We can see that if $f$ is not irreducible
 
-But in fact $f(0)=2$,$f(1)=f(2)=f(4)=3$, and $ff(3)=f(5)=f(6)=1$, $f(x)=0$ is insolvable in field $\mathbb{Z}_7$.
+$\implies$  at least one (\textit{up to a scalar}) linear polynomial divides $f$.
 
-We kick out all possible ways, so $f$ must be irreducible.
+ $\implies$$f$ has at least one root in field $\mathbb{Z}_7[x]$.
+ 
+ 
+\vspace{8pt}
+But in fact $f(0)=2$,$f(1)=f(2)=f(4)=3$, and $f(3)=f(5)f=(6)=1$, $f(x)=0$ is insolvable in field $\mathbb{Z}_7$.
+
+We kick out all possible ways, $\therefore$ $f$ must be irreducible.
 
 \end{frame}
-
-
-
-\begin{frame}{Irreducible cubics in $\mathbb{Z}_p[x]$}
-Actually, $x^3+2$ is reducbile in $\mathbb{Z}_3$.
-
-In fact,
-
-$$
-x^3+2 = x^3-1 = (x-1)(x^2+x+1)
-$$
-\end{frame}
-
 
 \begin{frame}{Appendix: basic facts about number fields.}
 
@@ -72,7 +87,7 @@ $$
     \item $\mathbb{Z}_p$ is one of finite fields, \textit{i.e.} consisting only finite number of elements:
     
     $$
-    \Bar{0},\Bar{1},\dots,\Bar{p-1}.
+    \{\Bar{0},\Bar{1},\dots,\Bar{p-1}\}.
     $$
 \end{itemize}
 
