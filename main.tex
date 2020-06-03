@@ -1,0 +1,82 @@
+\documentclass{beamer}
+\usepackage{amssymb,amsmath}
+\mode<presentation>
+{
+  \usetheme{default}
+  \usecolortheme{spruce}
+  \usefonttheme{default} 
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\title{Irreducible Polynomials: Examples}
+\author{You}
+\date{Date of Presentation}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+Here we give examples of irreducible(\textit{quadratic} or \textit{cubic}) in different rings.
+\end{frame}
+
+
+\begin{frame}{Irreducible quadratics in $\mathbb{Q}[x]$}
+$f(x) = x^2+5$ is an irreducible quadratics in ring $\mathbb{Q}[x]$.
+
+Since roots of $f$ are outside of real fields(in complex fields), we cannot factorize $f$ into products of linear polynomial(s).
+\end{frame}
+
+
+\begin{frame}{Irreducible quadratics in $\mathbb{Z}_p[x]$}
+We take $f(x) = x^2+x+1$ and prime $p=2$.
+
+Since $f([0])=[1]$ and $f([1])= [1]$.
+$f$ is not divisible by a linear polynomial in $\mathbb{Z}_2$.
+
+So the polynomial is irreducible.
+\end{frame}
+
+
+\begin{frame}{Irreducible cubics in $\mathbb{Z}_p[x]$}
+Take $f(x)= x^3+2$ and prime $p=7$.
+We can see that if $f$ is not irreducible, then at least one (\textit{up to a scalar}) linear polynomial divides $f$. So $f$ has a root in field $\mathbb{Z}_7$.
+
+But in fact $f(0)=2$,$f(1)=f(2)=f(4)=3$, and $ff(3)=f(5)=f(6)=1$, $f(x)=0$ is insolvable in field $\mathbb{Z}_7$.
+
+We kick out all possible ways, so $f$ must be irreducible.
+
+\end{frame}
+
+
+
+\begin{frame}{Irreducible cubics in $\mathbb{Z}_p[x]$}
+Actually, $x^3+2$ is reducbile in $\mathbb{Z}_3$.
+
+In fact,
+
+$$
+x^3+2 = x^3-1 = (x-1)(x^2+x+1)
+$$
+\end{frame}
+
+
+\begin{frame}{Appendix: basic facts about number fields.}
+
+\begin{itemize}
+    \item $\mathbb{Q}$ is the field of rational numbers.
+    
+    \item $\mathbb{Z}_p$ is one of finite fields, \textit{i.e.} consisting only finite number of elements:
+    
+    $$
+    \Bar{0},\Bar{1},\dots,\Bar{p-1}.
+    $$
+\end{itemize}
+
+\end{frame}
+
+
+\end{document}
